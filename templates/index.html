@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Elements — Ultra Luxury</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@200;300;400;500;600;700&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="{{ url_for('static', filename='images/fortunelogo.png') }}" alt="Fortune Elements">
+            </a>
+            <div class="nav-links">
+                <a href="#highlights">Highlights</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#map-section">Location</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+            <source src="{{ url_for('static', filename='videos/herosectionanimation.mp4') }}" type="video/mp4">
+        </video>
+        <div class="hero-pattern"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content" id="heroContent">
+            <img src="{{ url_for('static', filename='images/fortunelogo.png') }}" alt="Fortune Elements" class="logo">
+            <h1 class="hero-title">Fortune <span>Elements</span></h1>
+            <p class="hero-subtitle">Ultra Luxury Living</p>
+            <div class="hero-line"></div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse"></div>
+            <span>Explore</span>
+        </div>
+    </section>
+
+    <div class="divider-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#f4f7f4"/>
+        </svg>
+    </div>
+
+    <!-- ═══ HIGHLIGHTS ═══ -->
+    <section class="section highlights" id="highlights">
+        <div class="decor-dots decor-dots-1"></div>
+        <div class="decor-dots decor-dots-2"></div>
+        <div class="container">
+            <p class="section-label reveal">Highlights</p>
+            <h2 class="section-title reveal type-text" data-text="The Elements of Luxury">The <span>Elements</span> of Luxury</h2>
+            <div class="section-divider reveal"></div>
+            <div class="highlights-grid">
+                <div class="highlight-card" data-tilt>
+                    <span class="icon">⊹</span>
+                    <h3>Prime Location</h3>
+                    <p>Premium affordable plots beside Hotel Shivainn, High Court Road, Parsada, Bilaspur</p>
+                </div>
+                <div class="highlight-card" data-tilt>
+                    <span class="icon">✦</span>
+                    <h3>RERA Approved</h3>
+                    <p>RERA & TNC approved project ensuring complete transparency and trust</p>
+                </div>
+                <div class="highlight-card" data-tilt>
+                    <span class="icon">☙</span>
+                    <h3>Sky Walk</h3>
+                    <p>Elevated sky walk adorned with plants and trees for a serene lifestyle</p>
+                </div>
+                <div class="highlight-card" data-tilt>
+                    <span class="icon">◈</span>
+                    <h3>Healthy Living</h3>
+                    <p>Designed for a healthy lifestyle with lush greens and open spaces</p>
+                </div>
+                <div class="highlight-card" data-tilt>
+                    <span class="icon">⟡</span>
+                    <h3>24/7 Security</h3>
+                    <p>State-of-the-art security cameras for complete peace of mind</p>
+                </div>
+                <div class="highlight-card" data-tilt>
+                    <span class="icon">❋</span>
+                    <h3>Meditation Zone</h3>
+                    <p>Dedicated meditation and fitness garden for mind-body wellness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-wave divider-wave-alt">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C360,0 1080,120 1440,60 L1440,120 L0,120 Z" fill="#f4f7f4"/>
+        </svg>
+    </div>
+
+    <!-- ═══ AMENITIES ═══ -->
+    <section class="section amenities" id="amenities">
+        <div class="container">
+            <p class="section-label reveal">Amenities</p>
+            <h2 class="section-title reveal type-text" data-text="World-Class Facilities">World<span>-</span>Class <span>Facilities</span></h2>
+            <div class="section-divider reveal"></div>
+            <div class="amenities-grid">
+                <div class="amenity-item reveal-scale"><span class="icon">🛕</span><span>Temple</span></div>
+                <div class="amenity-item reveal"><span class="icon">🏀</span><span>Basketball Court</span></div>
+                <div class="amenity-item reveal-scale"><span class="icon">🏐</span><span>Volleyball Court</span></div>
+                <div class="amenity-item reveal"><span class="icon">🏸</span><span>Badminton Court</span></div>
+                <div class="amenity-item reveal-scale"><span class="icon">🎾</span><span>Tennis Court</span></div>
+                <div class="amenity-item reveal"><span class="icon">🏏</span><span>Cricket Pitch</span></div>
+                <div class="amenity-item reveal-scale"><span class="icon">🌿</span><span>Maze Garden</span></div>
+                <div class="amenity-item reveal"><span class="icon">🏃</span><span>Jogging Track</span></div>
+                <div class="amenity-item reveal-scale"><span class="icon">🏊</span><span>Splash Pool</span></div>
+                <div class="amenity-item reveal"><span class="icon">🎯</span><span>Outdoor Games</span></div>
+                <div class="amenity-item reveal-scale"><span class="icon">🎲</span><span>Indoor Games</span></div>
+                <div class="amenity-item reveal"><span class="icon">🧘</span><span>Meditation Zone</span></div>
+                <div class="amenity-item reveal-scale"><span class="icon">🏋️</span><span>Fitness Garden</span></div>
+                <div class="amenity-item reveal"><span class="icon">🌳</span><span>Arena Park</span></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#f4f7f4"/>
+        </svg>
+    </div>
+
+    <!-- ═══ MAP ═══ -->
+    <section class="map-section" id="map-section">
+        <div class="container">
+            <p class="section-label reveal">Location</p>
+            <h2 class="section-title reveal">Find <span>Us</span></h2>
+            <div class="section-divider reveal"></div>
+            <div class="map-wrapper reveal">
+                <iframe src="https://www.google.com/maps?q=Fortune+Element,+Bilaspur&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="map-overlay">
+                    <p><strong>Fortune Elements</strong><br>Beside Hotel Shivainn, High Court Road, Parsada, Bilaspur (C.G.)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-wave divider-wave-alt">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C360,0 1080,120 1440,60 L1440,120 L0,120 Z" fill="#ffffff"/>
+        </svg>
+    </div>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <p class="section-label reveal">Get in Touch</p>
+            <h2 class="section-title reveal type-text" data-text="Begin Your Journey">Begin Your <span>Journey</span></h2>
+            <div class="section-divider reveal"></div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="reveal"><span class="label">Address</span><span class="value">Fortune Elements, Beside Hotel Shivainn, High Court Road, Parsada, Bilaspur (C.G.)</span></p>
+                    <p class="reveal"><span class="label">Phone</span><span class="value"><a href="tel:8827911142" class="phone-num">8827911142</a></span></p>
+                    <p class="reveal"><span class="label">Email</span><span class="value"><a href="mailto:marketing@fortuneinfra.net.in">marketing@fortuneinfra.net.in</a></span></p>
+                    <p class="reveal"><span class="label">Social</span><span class="value">@fortune.elements</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Fortune Elements. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ═══ SCRIPTS ═══ -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
